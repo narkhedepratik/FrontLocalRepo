@@ -1,0 +1,17 @@
+<h1>Data Binding..!</h1>
+{{userName}}<br>
+<label>Enter Username:-</label>
+<input type="text" [value]="userName">
+<div [hidden]="flag">
+
+  <h1>This is html div, We will Hide or show it using hidden property..!</h1>
+</div>
+<br>
+
+ <button (click)="hello()">Click Me!</button>
+ <h1 (mouseover)="changeText()" (mouseout)="defaultText()">{{userName}}</h1>
+
+ <pre>
+ </pre>
+ <label>Change Username:-</label>
+<input type="text"   [(ngModel)]="userName">
